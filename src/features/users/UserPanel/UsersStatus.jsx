@@ -1,5 +1,5 @@
 
-export default function UsersStatus() {
+export default function UsersStatus({ loading, error, users }) {
     return (
         <div className="flex flex-wrap gap-2.5 my-3">
             {loading && (
@@ -8,7 +8,7 @@ export default function UsersStatus() {
                 </div>
             )}
 
-            {!loading && !error && UsersStatus.length > 0 && (
+            {!loading && !error && users.length > 0 && (
                 <div className="px-3 py-2 rounded-xl border border-green-400/30 bg-green-400/10 text-white/90">
                     Loaded successfully.
                 </div>
