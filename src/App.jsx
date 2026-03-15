@@ -1,4 +1,5 @@
 import Header from "./components/Header"
+import InfoPanel from "./components/InfoPanel"
 import UsersPanel from "./features/users/UserPanel/UsersPanel"
 
 
@@ -16,6 +17,8 @@ function App() {
               <UsersPanel />
             </div>
           </section>
+
+          <InfoPanel />
         </main>
       </div>
     </div>
